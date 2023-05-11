@@ -8,10 +8,7 @@ const usePagingHook = (COUNT: number) => {
   const [viewList, setViewList] = useState<(GetListResponseDto | GetSearchListResponseDto | GetMyListResponseDto | Comment)[]>([]);
   const [pageNumber, setPageNumber] = useState<number>(1);
 
-  //? 한 페이지에 5개의 게시물을 보여주고자 할 때
-  //? 배열의 시작 인덱스    5 * pageNumber - 5 -> 5 * (pageNumber - 1)
-  //? 배열의 마지막 인덱스  5 * pageNumber - 1
-
+  
   const onPageHandler = (page: number) => {
     setPageNumber(page);
   
