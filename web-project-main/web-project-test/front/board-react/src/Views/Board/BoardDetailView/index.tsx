@@ -6,6 +6,12 @@ import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
+import CommentListItem from 'src/components/CommentListItem';
+import LikeListItem from 'src/components/LikeListItem';
+import { Comment, Liky } from 'src/interfaces';
+import ResponseDto from 'src/apis/response';
+import { LikeDto, PostCommentDto } from 'src/apis/request/board';
+
 export default function BoardDetailView() {
     return(
         <Box sx={{display: 'flex', justifyContent: 'center'}}>
