@@ -3,9 +3,9 @@ interface Comment {
     writerEmail: string;
     boardNumber: number;
     writeDatetime: string;
-    commentContent: string;
-    writerProfileUrl?: string | null;
+    commentContent: string; 
     writerNickname: string;
+    writerProfileUrl: string;
 }
 
 export default Comment;

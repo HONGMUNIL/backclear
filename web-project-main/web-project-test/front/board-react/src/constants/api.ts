@@ -4,7 +4,6 @@ export const authorizationHeader = (accessToken: string) => {
 export const mutipartHeader = () => {
     return { headers: { 'Content-Type': 'multipart/form-data' } };
 }
-
 const HOST = 'http://localhost:4040/';
 
 export const SIGN_UP_URL = `${HOST}auth/sign-up`;
